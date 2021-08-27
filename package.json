@@ -1,0 +1,15 @@
+{
+  "name": "brightspace-margin-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "web-ext run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web-ext": "^6.3.0"
+  }
+}

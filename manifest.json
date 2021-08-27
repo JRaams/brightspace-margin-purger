@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "brightspace-margin-purger",
+  "version": "1.0",
+  "description": "Purges the rediculous margins on brightspace.avans.nl",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.brightspace.avans.nl/*", "*://*.brightspace.com/*"],
+      "js": ["purgewhitespace.js"],
+      "all_frames": true
+    }
+  ]
+}
