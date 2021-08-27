@@ -17,6 +17,12 @@ Avans brightspace rediculous margin purger Firefox addon / extension
 - navigate to this project directory
 - open 'manifest.json'
 
+# Create zip
+
+`npm run zip`
+
+Creates 'web-ext-artifacts' folder containing the addon .zip
+
 # Why
 
 Large bootstrap container margin :rage:

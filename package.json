@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "web-ext run"
+    "run": "web-ext run",
+    "zip": "rimraf ./web-ext-artifacts && web-ext build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "rimraf": "^3.0.2",
     "web-ext": "^6.3.0"
   }
 }
