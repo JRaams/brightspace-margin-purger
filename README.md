@@ -1,6 +1,6 @@
 # brightspace-margin-purger
 
-Avans brightspace rediculous margin purger Firefox addon / extension
+Avans brightspace ridiculous margin purger Firefox addon / extension
 
 ![Avans Brightspace Margin Purger Icon](./icons/bmp-48.png "Avans Brightspace Margin Purger")
 
