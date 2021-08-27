@@ -2,6 +2,8 @@
 
 Avans brightspace rediculous margin purger Firefox addon / extension
 
+![Avans Brightspace Margin Purger Icon](./icons/bmp-48.png "Avans Brightspace Margin Purger")
+
 # Dev
 
 1. Install deps
@@ -14,3 +16,13 @@ Avans brightspace rediculous margin purger Firefox addon / extension
 - click 'Load Temporary Add-on...'
 - navigate to this project directory
 - open 'manifest.json'
+
+# Why
+
+Large bootstrap container margin :rage:
+
+Before:
+![Before picture](./assets/before.png)
+
+After:
+![After picture](./assets/after.png)

@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Purges the rediculous margins on brightspace.avans.nl",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/bmp-48.png"
   },
   "content_scripts": [
     {

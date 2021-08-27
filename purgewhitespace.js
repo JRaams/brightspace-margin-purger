@@ -30,6 +30,7 @@ if (isAvansD2l) {
   );
   leftCol.style.marginRight = "1em";
 }
+
 // First iframe, content container -> src="//s.brightspace.com/apps/smart-curriculum/..."
 if (isBrightspaceCom) {
   waitForElement("#root-wrapper").then((rootWrapper) => {
@@ -43,7 +44,7 @@ if (isBrightspaceCom) {
 // Second iframe, main content -> https://brightspace.avans.nl//content/enforced/...
 if (isAvansContent) {
   waitForElement(".content .container-fluid").then((containerFluid) => {
-    containerFluid.style.maxWidth = "initial";
+    containerFluid.style.maxWidth = "95%";
     containerFluid.style.padding = "0";
 
     let row = containerFluid.querySelector("main div.row");
