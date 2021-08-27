@@ -10,17 +10,26 @@ const waitForElement = async (selector) => {
   return document.querySelector(selector);
 };
 
+const waitForProperty = async (obj, prop) => {
+  while (obj[prop] === null) {
+    await new Promise((resolve) => requestAnimationFrame(resolve));
+  }
+  return obj[prop];
+};
+
 // Base avans site -> https://brightspace.avans.nl/d2l/le/lessons/...
 if (isAvansD2l) {
-  let navHeader = document
-    .querySelector("d2l-navigation-main-header")
-    .shadowRoot.querySelector(".d2l-navigation-centerer");
-  navHeader.style.maxWidth = "initial";
+  waitForElement("d2l-navigation-main-header").then(async (mainHeader) => {
+    const shadowRoot = await waitForProperty(mainHeader, "shadowRoot");
+    let navCenterer = shadowRoot.querySelector(".d2l-navigation-centerer");
+    navCenterer.style.maxWidth = "initial";
+  });
 
-  let navFooter = document
-    .querySelector("d2l-navigation-main-footer")
-    .shadowRoot.querySelector(".d2l-navigation-centerer");
-  navFooter.style.maxWidth = "initial";
+  waitForElement("d2l-navigation-main-footer").then(async (mainFooter) => {
+    const shadowRoot = await waitForProperty(mainFooter, "shadowRoot");
+    let navFooter = shadowRoot.querySelector(".d2l-navigation-centerer");
+    navFooter.style.maxWidth = "initial";
+  });
 
   const d2lPageMain = document.querySelector(".d2l-page-main");
   d2lPageMain.style.maxWidth = "initial";
