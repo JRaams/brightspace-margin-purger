@@ -2,7 +2,7 @@
   "name": "brightspace-margin-extension",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "purgewhitespace.js",
   "scripts": {
     "run": "web-ext run",
     "zip": "rimraf ./web-ext-artifacts && web-ext build"
