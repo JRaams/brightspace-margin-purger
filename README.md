@@ -4,7 +4,14 @@ Avans brightspace ridiculous margin purger Firefox addon / extension
 
 ![Avans Brightspace Margin Purger Icon](./icons/bmp-48.png "Avans Brightspace Margin Purger")
 
-# Installing
+# Adding to Firefox
+
+Install the following add-on:
+https://addons.mozilla.org/en-US/firefox/addon/avans-bs-margin-purger/
+
+It can be toggled off by visiting your add-on manager at `about:addons` (CTRL + SHIFT + A)
+
+# Installing zip
 
 Go to [Releases](https://github.com/JRaams/brightspace-margin-purger/releases) and download the .zip
 
